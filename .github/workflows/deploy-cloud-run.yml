@@ -14,6 +14,11 @@ jobs:
     steps:
       - name: Checkout do Código
         uses: actions/checkout@v3
+        with:
+          submodules: 'recursive'  # Garante que submódulos sejam clonados recursivamente
+
+      - name: Atualizar Submódulos
+        run: git submodule update --init --recursive ui/freeboard
 
       - name: Autenticação no GCP
         uses: google-github-actions/auth@v2
