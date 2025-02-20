@@ -1,6 +1,6 @@
 [submodule "ui/freeboard"]
     path = ui/freeboard
-    url = https://github.com/BIPES/freeboard
+    url = https://github.com/BIPES/freeboard.git
 [submodule "databoard"]
     path = databoard
     url = git@github.com:joaodrj/databoard.git
